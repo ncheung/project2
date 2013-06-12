@@ -1,0 +1,87 @@
+h1{
+	font-size:1.8em;
+}
+
+h2 {
+	font-size: 1.20em;
+	line-height: 1.5em;
+	margin: 0 0 0.2em 0;
+}
+
+h3 {
+	font-size: 1.1em;
+	line-height: 1em;
+	margin: 0.4em auto;
+}
+
+.content_image {
+	max-width: 120px;
+	max-height: 120px;
+	height:auto;
+	width: 50%;
+	margin: 0 1em 0.2em 0;
+}
+
+p.content_text{
+	font-size: 85%;
+	line-height: 1.5em;
+}
+
+.albumcover {
+	border: 0.3em solid #FFFFFF;
+}
+
+.albumcover:hover{
+	border: 0.3em solid #000000;
+}
+
+.sidebar_searchbutton{
+	padding: 4% 2%;
+	font-size: 80%;
+}
+
+p.sidebartext {
+	margin-top: 0.4em;
+	font-size: 80%;
+	line-height: 1.5em
+}
+
+.first-separator {
+	height: 2em;
+	width: 50%;
+}
+
+.separator {
+	height: 2em;
+	margin: 0 29.833333334% 0 22.166666666%;
+	width: 50%;
+}
+
+.second
+{
+	max-width: 1055px;
+	height: 2.5em; /*height of the first row*/
+}
+
+.menu {
+	font-size: 1.1em;
+	color: #FFFFFF;
+	line-height: 0.3;
+	margin-left: 2.4em;
+	/* min-width: 768px; */
+}
+
+.logo {
+	position: fixed;
+	margin: -0.5em 0 0 -1.7em;
+	max-height:95px;
+	width:32%;
+}
+
+.twitter-logo {
+	margin: -0.4em 0 0 .8em;
+}
+
+.facebook-logo {
+	margin: -.8em 0 0 .8em;
+}

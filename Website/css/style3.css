@@ -1,0 +1,54 @@
+
+h1{
+	font-size:2em;
+	margin-bottom: 0.5em;
+	margin-left: 0.5em;
+}
+
+h2 {
+	font-size: 1.70em;
+	line-height: 1.5em;
+	margin: 0 0 0.2em 0.5em;
+}
+
+p.content_text{
+	font-size: 100%;
+	line-height: 1.5em;
+}
+
+.content_image{
+	max-width: 340px;
+	max-height: 340px;
+	height: auto;
+	width: 40%;
+	margin-left: 2%;
+}
+
+.albumcover{
+	width: 80%;
+	max-width: 640px;
+	margin: 0 8% 0 8%;
+	border: 0.8em solid #FFFFFF;
+	margin-top: 0.4em;
+}
+
+.albumcover:hover{
+	border: 0.8em solid #000000;
+}
+
+p.more {
+	font-size: 2em;
+	margin: 1em .5em -0.7em 0;
+}
+
+.first-separator {
+	height: 2em;
+	width: 95%;
+	margin: 0 2.5% 0 2.5%;
+}
+
+.separator {
+	height: 2em;
+	margin: 0 2.5% 0 2.5%;
+	width: 95%;
+}

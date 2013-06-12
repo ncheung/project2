@@ -1,0 +1,13 @@
+.sidebar-column {
+	display: none;
+}
+
+.main-content {
+	width: 100%;
+}
+
+.heading-column { width: 100%; }
+.heading-content-column { width: 100%; }
+.content-column { width: 100%; }
+.album-column { width: 100%; }
+.content-sidebar-column { width: 100%; }
