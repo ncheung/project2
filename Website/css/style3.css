@@ -14,6 +14,7 @@ h2 {
 p.content_text{
 	font-size: 100%;
 	line-height: 1.5em;
+	margin: 0 5% 0 5%;
 }
 
 .content_image{
@@ -21,13 +22,13 @@ p.content_text{
 	max-height: 340px;
 	height: auto;
 	width: 40%;
-	margin-left: 2%;
+	/* margin-left: 2%; */
 }
 
 .albumcover{
 	width: 80%;
 	max-width: 640px;
-	margin: 0 8% 0 8%;
+	margin: 0 6% 0 6%;
 	border: 0.8em solid #FFFFFF;
 	margin-top: 0.4em;
 }
@@ -37,8 +38,8 @@ p.content_text{
 }
 
 p.more {
-	font-size: 2em;
-	margin: 1em .5em -0.7em 0;
+	font-size: 1.7em;
+	margin: 1em 2% -0.7em 0;
 }
 
 .first-separator {
