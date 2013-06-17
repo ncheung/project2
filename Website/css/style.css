@@ -80,6 +80,11 @@ p.twitter {
 	margin: 0.5em auto;
 }
 
+p.checkout{
+	float:left;
+	margin: 2% 0 0 30%;
+}
+
 /*----- link styles -----*/
 a:link { color: #EC3F51; text-decoration: none; }
 a:visited { color: #EC3F51 }
