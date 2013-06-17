@@ -23,7 +23,7 @@ h3 {
 }
 
 p.content_text{
-	font-size: 85%;
+	font-size: 90%;
 	line-height: 1.5em;
 }
 
@@ -42,19 +42,8 @@ p.content_text{
 
 p.sidebartext {
 	margin-top: 0.4em;
-	font-size: 80%;
-	line-height: 1.5em
-}
-
-.first-separator {
-	height: 2em;
-	width: 50%;
-}
-
-.separator {
-	height: 2em;
-	margin: 0 29.833333334% 0 22.166666666%;
-	width: 50%;
+	font-size: 85%;
+	line-height: 1.2em
 }
 
 .second

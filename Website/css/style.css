@@ -263,7 +263,7 @@ nav ul li {
 	-webkit-box-shadow: 0 0 3px #000000;
 	box-shadow: 0 0 3px #000000;
 	width: 515px;
-	height: 515px;
+	height: auto;
 }
 
 .albumcover_small {
@@ -387,9 +387,13 @@ img.merchandise_image:hover {
 }
 
 .merchandise_summary{
-	margin: 0 0 1% 42%;
+	/* margin: 0 0 1% 42%; */
 	font-size: 90%;
 	line-height: 1.6em;
+}
+
+.date {
+	text-align: right;
 }
 
 span.chyron { font-size: 1.2em; padding-top: 10px; }

@@ -1,14 +1,14 @@
 
 h1{
-	font-size:2em;
+	font-size:2.2em;
 	margin-bottom: 0.5em;
 	margin-left: 0.5em;
 }
 
 h2 {
-	font-size: 1.70em;
+	font-size: 1.60em;
 	line-height: 1.5em;
-	margin: 0 0 0.2em 0.5em;
+	margin: 0 0 0.5em 0.5em;
 }
 
 p.content_text{
@@ -38,7 +38,7 @@ p.content_text{
 }
 
 p.more {
-	font-size: 1.7em;
+	font-size: 1.2em;
 	margin: 1em 2% -0.7em 0;
 }
 
