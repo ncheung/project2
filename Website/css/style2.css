@@ -1,9 +1,9 @@
-h1{
-	font-size:1.8em;
+h1 {
+	font-size: 2.2em;
 }
 
 h2 {
-	font-size: 1.20em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	margin: 0 0 0.2em 0;
 }
@@ -17,12 +17,12 @@ h3 {
 .content_image {
 	max-width: 120px;
 	max-height: 120px;
-	height:auto;
+	height: auto;
 	width: 50%;
 	margin: 0 1em 0.2em 0;
 }
 
-p.content_text{
+p.content_text {
 	font-size: 90%;
 	line-height: 1.5em;
 }
@@ -31,11 +31,11 @@ p.content_text{
 	border: 0.3em solid #FFFFFF;
 }
 
-.albumcover:hover{
-	border: 0.3em solid #000000;
+.albumcover:hover {
+	border: 0.3em solid #E9E9E9;
 }
 
-.sidebar_searchbutton{
+.sidebar_searchbutton {
 	padding: 4% 2%;
 	font-size: 80%;
 }
@@ -43,34 +43,41 @@ p.content_text{
 p.sidebartext {
 	margin-top: 0.4em;
 	font-size: 85%;
-	line-height: 1.2em
+	line-height: 1.5em
 }
 
-.second
-{
+.second {
 	max-width: 1055px;
-	height: 2.5em; /*height of the first row*/
-}
-
-.menu {
-	font-size: 1.1em;
-	color: #FFFFFF;
-	line-height: 0.3;
-	margin-left: 2.4em;
-	/* min-width: 768px; */
+	height: 3em;
 }
 
 .logo {
-	position: fixed;
-	margin: -0.5em 0 0 -1.7em;
-	max-height:95px;
-	width:32%;
+	background-color: #E9E8E3;
+	max-width: 12em;
 }
 
-.twitter-logo {
-	margin: -0.4em 0 0 .8em;
+p.logolarge {
+	font-family: 'ComfortaaThin';
+	font-size: 2.9em;
+	color: #000000;
+	display: inline;
+	padding-left: 0.3em;
+	text-shadow: 0px 1px 2px #555;
 }
 
-.facebook-logo {
-	margin: -.8em 0 0 .8em;
+p.logosmall {
+	font-family: 'ComfortaaThin';
+	font-size: 1.8em;
+	color: gray;
+	display: inline;
+	text-shadow: 0px 1px 2px #555;
+}
+
+nav ul li {
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "HelveticaNeue-Light",
+	"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin-right: 0.7em;
+	display: inline;
+	font-size: 1.4em;
+	letter-spacing: 0.13em;
 }

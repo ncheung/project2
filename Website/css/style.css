@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'ComfortaaThin';
+    src: url('../fonts/comfortaa/Comfortaa_Thin-webfont.eot');
+    src: url('../fonts/comfortaa/Comfortaa_Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comfortaa/Comfortaa_Thin-webfont.woff') format('woff'),
+         url('../fonts/comfortaa/Comfortaa_Thin-webfont.ttf') format('truetype'),
+         url('../fonts/comfortaa/Comfortaa_Thin-webfont.svg#ComfortaaThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComfortaaRegular';
+    src: url('../fonts/comfortaa/Comfortaa_Regular-webfont.eot');
+    src: url('../fonts/comfortaa/Comfortaa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comfortaa/Comfortaa_Regular-webfont.woff') format('woff'),
+         url('../fonts/comfortaa/Comfortaa_Regular-webfont.ttf') format('truetype'),
+         url('../fonts/comfortaa/Comfortaa_Regular-webfont.svg#ComfortaaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComfortaaBold';
+    src: url('../fonts/comfortaa/Comfortaa_Bold-webfont.eot');
+    src: url('../fonts/comfortaa/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comfortaa/Comfortaa_Bold-webfont.woff') format('woff'),
+         url('../fonts/comfortaa/Comfortaa_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/comfortaa/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html
 {
 	font-size: 100%; /*at 16px*/
@@ -6,11 +39,14 @@ html
 
 body
 {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue-Light",
+	"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	background-color: #E9E8E3;
 }
 
 h1 {
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "HelveticaNeue-UltraLight",
+	"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 3em;
 	color: #808285;
 	font-weight: normal;
@@ -58,6 +94,7 @@ p.sidebartext {
 }
 
 p.more {
+	font-size: 90%;
 	text-align: right;
 	margin: 1em .5em -1.7em 0;
 }
@@ -80,8 +117,8 @@ p.twitter {
 	margin: 0.5em auto;
 }
 
-p.checkout{
-	float:left;
+p.checkout {
+	float: left;
 	margin: 2% 0 0 30%;
 }
 
@@ -91,18 +128,12 @@ a:visited { color: #EC3F51 }
 a:hover { color: #000000 }
 a:active { color: #EC3F51 }
 
-.logo {
-	position: fixed;
-	margin: -0.5em 0 0 -0.5em;
-	/* width: 16.666666666%; */
-}
-
-.menu a, nav a:visited {
+nav a, nav a:visited {
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
-.menu a:hover {
+nav a:hover {
 	color: #000000;
 	text-decoration: none;
 	background-color: #FFFFFF;
@@ -110,23 +141,18 @@ a:active { color: #EC3F51 }
 }
 
 .content_image:hover {
-	border: 0.4em solid #000000;
-	box-shadow:inset 0 0 10px #000000;
+	border: 0.4em solid #E9E9E9;
 }
 
 .albumcover:hover {
-	border: 0.4em solid #000000;
+	border: 0.4em solid #E9E9E9;
 }
-
-/*p.musicpage a, nav a:visited a:hover {
-	color: #FFFFFF;
-	text-decoration: none;
-}*/
 
 .first {
 	position: fixed;
 	height: 2em;
 	background-color: #E9E8E3;
+	z-index: 1;
 }
 
 .second
@@ -134,8 +160,43 @@ a:active { color: #EC3F51 }
 	position: fixed;
 	background-color: #EC3F51;
 	margin-top: 2em;
-	max-width: 1055px;
-	height: 3em; /*height of the first row*/
+	width: 90%;
+	height: 3em;
+	z-index: 1;
+/*	min-width: 75em;*/
+}
+
+.logo {
+	background-color: #E9E8E3;
+	max-width: 12em;
+}
+
+p.logolarge {
+	font-family: 'ComfortaaThin';
+	font-size: 2.9em;
+	color: #000000;
+	display: inline;
+	padding-left: 0.3em;
+	text-shadow: 0px 1px 2px #555;
+}
+
+p.logosmall {
+	font-family: 'ComfortaaThin';
+	font-size: 1.8em;
+	color: gray;
+	display: inline;
+	padding-right: 1em;
+	text-shadow: 0px 1px 2px #555;
+}
+
+nav ul li {
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "HelveticaNeue-Light",
+	"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin-right: 0.7em;
+	display: inline;
+	font-size: 1.4em;
+	letter-spacing: 0.13em;
+	width: auto;
 }
 
 .third
@@ -159,32 +220,16 @@ a:active { color: #EC3F51 }
 	border-top: 1px solid #C9C9C9;
 }
 
-.menu {
-	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "HelveticaNeue-Light",
-	"Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 1.4em;
-	color: #FFFFFF;
-	line-height: 0.3;
-	margin-left: 2em;
-}
-
 .twitter-logo {
-	padding: 0;
-	max-width:25px;
-	margin: -0.3em 0 0 .8em;
-	float: right;
+	width: auto;
 }
 
 .facebook-logo {
-	padding: 0;
-	max-width: 11px;
-	margin: -.4em 0 0 .8em;
-	float: right;
+	width: auto;
 }
 
-nav ul li { 
-	margin-left: 0.5em; /*spacing between menu items*/
-	display: inline;
+.shoppingcart-logo {
+	width: auto;
 }
 
 /*----- sidebar styles -----*/
@@ -192,7 +237,7 @@ nav ul li {
 	padding: 0;
 	margin: 0;
 	text-align: right;
-	float:right;
+	float: right;
 	line-height: 1.6em;
 }
 
@@ -231,10 +276,7 @@ nav ul li {
 }
 
 .content {
-/*	 border-bottom: 1px solid #C9C9C9; */
-	/* margin-left: 5em; */
 	padding: 0 0 3em 0;
-/*	border: 1px solid #000000;*/
 }
 
 .content_image {
@@ -257,7 +299,7 @@ nav ul li {
 	-webkit-box-shadow: 0 0 3px #000000;
 	box-shadow: 0 0 3px #000000;
 	max-width: 160px;
-	width: 90%;
+	width: 85%;
 }
 
 .albumcover_large {
@@ -267,8 +309,7 @@ nav ul li {
 	-moz-box-shadow: 0 0 3px #000000;
 	-webkit-box-shadow: 0 0 3px #000000;
 	box-shadow: 0 0 3px #000000;
-	width: 515px;
-	height: auto;
+	width: 100%;
 }
 
 .albumcover_small {
@@ -278,12 +319,11 @@ nav ul li {
 	-webkit-box-shadow: 0 0 3px #000000;
 	box-shadow: 0 0 3px #000000;
 	max-width:80px;
-	width:100%;
+	width: 100%;
 }
 
 .albumcover_small:hover {
-	border: 0.2em solid #000000;
-	box-shadow:inset 0 0 10px #000000;
+	border: 0.2em solid #E9E9E9;
 }
 
 .artist li {
@@ -334,7 +374,7 @@ nav ul li {
 	-webkit-border-radius: 10px 0 0 10px;
 	-o-border-radius: 10px 0 0 10px;
 	border: 0 none;
-	width: 25.5em;
+	width: 70%;
 }
 
 .searchbutton {
@@ -362,6 +402,7 @@ nav ul li {
 .stars {
 	height: 17px;
 	margin-bottom: 0.4em;
+	width: auto;
 }
 
 img.community{
@@ -381,8 +422,7 @@ img.merchandise_image{
 }
 
 img.merchandise_image:hover {
-	border: 0.4em solid #000000;
-	box-shadow:inset 0 0 10px #000000;
+	border: 0.4em solid #E9E9E9;
 }
 
 .merchandise_info{
