@@ -219,26 +219,16 @@
 			<div class="heading-content-column column"></div>
 
 			<div class="content-column column content">
-				<form name="hongkiat" id="hongkiat-form" method="post" action="#">
-					<div id="wrapping" class="clearfix">
-						<section id="aligned">
-							<input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput">
-		
-							<input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput">
-		
-							<input type="url" name="website" id="website" placeholder="Website URL" autocomplete="off" tabindex="3" class="txtinput">
-		
-							<input type="tel" name="telephone" id="telephone" placeholder="Phone number? (optional)" tabindex="4" class="txtinput">
-		
-							<textarea name="message" id="message" placeholder="Enter your review ..." tabindex="5" class="txtblock"></textarea>
-					</section>
-				</div>
-
-					<section id="buttons">
-						<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
-						<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit">
-						<br style="clear:both;">
-					</section>
+				<form class="review">
+					<fieldset class="review">
+						<ol>
+							<li><input id="name" name="name" type="text" placeholder="First and last name" required></li><br />
+							<li><input id="email" name="email" type="email" placeholder="example@domain.com" required /></li><br />
+							<li><input id="website" name="website" type="text" placeholder="Website URL" required /></li><br />
+							<li><textarea id="message" name="message" placeholder="Enter your review ..." rows="10" cols="50"></textarea></li><br />
+							<li><button type="submit">Post</button></li>
+						</ol>
+					</fieldset>
 				</form>
 			</div>
 		</div> <!-- sixteenth row -->
