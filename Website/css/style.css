@@ -131,7 +131,13 @@ a:visited { color: #EC3F51 }
 a:hover { color: #000000 }
 a:active { color: #EC3F51 }
 
-nav a, nav a:visited {
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+/*	border: 1px solid black;*/
+}
+
+nav a:visited {
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -171,8 +177,9 @@ img.merchandise_image:hover {
 	position: fixed;
 	background-color: #EC3F51;
 	margin-top: 2em;
+	min-width: 1125px;
 	width: 90%;
-	height: 3em;
+	height: 59px;
 	z-index: 1;
 }
 
@@ -182,25 +189,14 @@ img.merchandise_image:hover {
 
 .logo {
 	background-color: #E9E8E3;
-	max-width: 12em;
+	width: 300px;
+	height: 59px;
 }
 
-p.logolarge {
-	font-family: 'ComfortaaThin';
-	font-size: 2.9em;
-	color: #000000;
-	display: inline;
-	padding-left: 0.3em;
-	text-shadow: 0px 1px 2px #555;
-}
-
-p.logosmall {
-	font-family: 'ComfortaaThin';
-	font-size: 1.8em;
-	color: gray;
-	display: inline;
-	padding-right: 1em;
-	text-shadow: 0px 1px 2px #555;
+nav {
+	padding: 0;
+	margin: 0;
+	float: left;
 }
 
 nav ul li {
@@ -210,7 +206,6 @@ nav ul li {
 	display: inline;
 	font-size: 1.4em;
 	letter-spacing: 0.13em;
-	width: auto;
 }
 
 .content-separator {
@@ -239,6 +234,11 @@ nav ul li {
 
 .shoppingcart-logo {
 	width: auto;
+}
+
+.menubutton {
+	width: 0px;
+	height: 0px;
 }
 
 /*----- sidebar styles -----*/
