@@ -11,19 +11,17 @@
 	<title>Vinyl Bros. > Lana Del Rey: Born to Die (2013)</title>
 	<!-- CSS -->
 	<!-- HTML5 normalize.css from http://necolas.github.com/normalize.css/ -->
-	<!-- Normalize CSS across browsers. Friendlier then a reset. -->
+	<!-- normalize CSS across browsers. Friendlier then a reset. -->
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="../css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<!-- Javascript -->
-	<!-- HTML5shiv.js from http://code.google.com/p/html5shiv/ -->
-	<!-- HTML5shiv.js for compatibility on older IE browsers -->
-
+	<!-- tablet and mobile stylesheets -->
 	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/grid2.css" />
 	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/style2.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/grid3.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/style3.css" />
-
+	<!-- javascript -->
+	<!-- HTML5shiv.js for compatibility on older IE browsers from http://code.google.com/p/html5shiv/ -->
 	<script type="text/javascript" src="scripts/html5shiv.js"></script>
 </head>
 <body>
@@ -35,10 +33,10 @@
 		<div class="one column"></div>
 
 		<div class="two column logo">
-			<a href="../index.html"><p class="logolarge">vinyl</p><p class="logosmall">bros.</p></a>
+			<a href="../index.html"><img src="../images/logo.png" alt="Vinyl Bros. logo"></a>
 		</div>
 		
-		<nav class="seven column">
+		<nav>
 			<ul>
 				<li><a href="music.html">music</a></li>
 				<li><a href="merchandise.html">merchandise</a></li>
@@ -49,6 +47,7 @@
 				<li><a href="#"><img class="facebook-logo" src="../images/facebook.png" alt="Facebook"></a></li>
 			</ul>
 		</nav>
+		<img class="menubutton" src="../images/menubutton.png" alt="Menu Button">
 	</div> <!-- end of second row -->
 	<!-- end of navigation -->
 
@@ -219,26 +218,16 @@
 			<div class="heading-content-column column"></div>
 
 			<div class="content-column column content">
-				<form name="hongkiat" id="hongkiat-form" method="post" action="#">
-					<div id="wrapping" class="clearfix">
-						<section id="aligned">
-							<input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput">
-		
-							<input type="email" name="email" id="email" placeholder="Your e-mail address" autocomplete="off" tabindex="2" class="txtinput">
-		
-							<input type="url" name="website" id="website" placeholder="Website URL" autocomplete="off" tabindex="3" class="txtinput">
-		
-							<input type="tel" name="telephone" id="telephone" placeholder="Phone number? (optional)" tabindex="4" class="txtinput">
-		
-							<textarea name="message" id="message" placeholder="Enter your review ..." tabindex="5" class="txtblock"></textarea>
-					</section>
-				</div>
-
-					<section id="buttons">
-						<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
-						<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit">
-						<br style="clear:both;">
-					</section>
+				<form class="review">
+					<fieldset class="review">
+						<ol>
+							<li><input id="name" name="name" type="text" placeholder="First and last name" required></li><br />
+							<li><input id="email" name="email" type="email" placeholder="example@domain.com" required /></li><br />
+							<li><input id="website" name="website" type="text" placeholder="Website URL" required /></li><br />
+							<li><textarea id="message" name="message" placeholder="Enter your review ..." rows="10" cols="50"></textarea></li><br />
+							<li><button type="submit">Post</button></li>
+						</ol>
+					</fieldset>
 				</form>
 			</div>
 		</div> <!-- sixteenth row -->

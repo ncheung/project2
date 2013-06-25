@@ -55,3 +55,11 @@ nav ul li {
 	width: 50px;
 	height: 59px;
 }
+
+.search {
+	padding-top: .4em;
+}
+
+.searchbox {
+	width: 62%;
+}
