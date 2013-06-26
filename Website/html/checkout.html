@@ -8,7 +8,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width"> <!-- Disables page scaling on mobile devices -->
-	<title>Vinyl Bros.</title>
+	<title>Vinyl Bros. > Cart > Checkout</title>
 	<!-- CSS -->
 	<!-- HTML5 normalize.css from http://necolas.github.com/normalize.css/ -->
 	<!-- normalize CSS across browsers. Friendlier then a reset. -->
@@ -47,7 +47,7 @@
 		
 		<nav>
 			<ul>
-				<li>music</li>
+				<li><a href="music.html">music</a></li>
 				<li><a href="merchandise.html">merchandise</a></li>
 				<li><a href="community.html">community</a></li>
 				<li><a href="about.html">about</a></li>
@@ -64,41 +64,92 @@
 		<div class="third row"></div>
 		
 		<div class="clearer"></div>
-		
+			
 		<!-- start of sidebar content -->
 		<div class="sidebar-column sidebar">
-			<p class="sidebartitle">recently viewed</p>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/love_deluxe.jpg" alt="Sade: Love Deluxe"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/music_sounds_better_with_you.jpg" alt="Stardust: Music Sounds Better With You"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/tanto_tempo.jpg" alt="Bebel Gilberto: Tanto Tempo"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/best_of_lounge_music.jpg" alt="The xx: Coexist"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/cry_just_a_little.jpg" alt="Bingo Players: Cry (Just a Little)"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/unorthadox_jukebox.jpg" alt="Bruno Mars: Unorthadox Jukebox"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/dave_brubeck_greatest_hits.jpg" alt="Dave Brubeck: Greatest Hits"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/elo_greatest_hits.jpg" alt="E.L.O.: Greatest Hits"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/breath_from_another.jpg" alt="Esthero: Breath From Another"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/rumours.jpg" alt="Fleetwood Mac: Rumours"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/the_dark_side_of_the_moon.jpg" alt="Pink Floyd: The Dark Side of the Moon"></a>
-			<a href="#"><img class="albumcover_small" src="../images/albumcovers/the_2nd_law.jpg" alt="Muse: The 2nd Law"></a>
+			<p class="sidebartitle">Billing Summary</p>
+			<p class="sidebartext">
+				<span class="billing_title"> Merchandise Subtotal: </span>
+				<span class="billing_amount"> $9.99</span><br />
+				<span class="billing_title"> Shipping: </span>
+				<span class="billing_amount"> $2.99</span><br />
+				<span class="billing_title"> Handling & Insurance: </span>
+				<span class="billing_amount"> $1.72</span>
+			</p>
 			
+			
+			<div class="sidebar_separator"></div>
+			
+			<p class="sidebartext total">
+				<span class="billing_title"> Total: </span>
+				<span class="billing_amount"> $13.70</span>
+			</p>
+			
+			<div class="sidebar_separator"></div>
+				
 			<div class="clearer"></div>
 		</div> <!-- end of sidebar -->
 		<!-- end of sidebar content-->
-		
+			
 		<div class="main-content content-separator"></div>
 
 		<div class="sixth row main-content">
 
 			<div class="heading-column column heading">
-				<h1>seek</h1>
+				<h1>details</h1>
 			</div>
 			
 			<div class="heading-content-column column"></div>
 
 			<div class="content-column column content">
-				<form class="search">
-					<input class="searchbox" type="text" placeholder="  Search for Artists, Albums, Songs  "/>
-					<input class="searchbutton" value="Search" type="submit">
+				<form class="checkout">
+					<fieldset class="checkout">
+						<ol>
+							<li>
+								<label class="personal" for="first_name"> First name: </label>
+								<input id="first_name" name="first_name" type="text" size="35" required>
+							</li><br />
+							<li>
+								<label class="personal"for="last_name"> Last name: </label>
+								<input id="last_name" name="last_name" type="text" size="35" required>
+							</li><br />
+							<li>
+								<label class="personal"for="address1"> Address 1: </label>
+								<input id="address1" name="address1" type="text" placeholder="(Street address, Company name, or c/o)" size="35" required>
+							</li><br />
+							<li>
+								<label class="personal"for="address2"> Address 2: </label>
+								<input id="address2" name="address2" type="text" placeholder="(Apartment, Building, Floor, etc.)" size="35" required>
+							</li><br />
+							<li>
+								<label class="personal"for="city"> City: </label>
+								<input id="city" name="city" type="text"  size="35" required>
+							</li><br />
+							<li>
+								<label class="personal"for="province"> Province: </label>
+								<select id="province" name="province">
+									<option value selected="selected">Select a province</option>
+									<option value="AB">Alberta</option>
+									<option value="BC">British Columbia</option>
+									<option value="MB">Manitoba</option>
+									<option value="NB">New Brunswick</option>
+									<option value="NL">Newfoundland</option>
+									<option value="NT">Northwest Territories</option>
+									<option value="NS">Nova Scotia</option>
+									<option value="NU">Nunavut</option>
+									<option value="ON">Ontario</option>
+									<option value="PE">Prince Edward Island</option>
+									<option value="QC">Quebec</option>
+									<option value="SK">Saskatchewan</option>
+									<option value="YT">Yukon Territories</option>
+								</select>
+							</li><br />
+							<li>
+								<label class="personal" for="postal"> Postal Code: </label>
+								<input id="postal" name="postal" type="text" size="35" required>
+							</li>
+						</ol>
+					</fieldset>
 				</form>
 			</div>
 		</div> <!-- sixth row -->
@@ -114,103 +165,47 @@
 		<div class="eighth row main-content">
 
 			<div class="heading-column column heading">
-				<h1>genre</h1>
+				<h1>credit <br /> card</h1>
 			</div>
 			
 			<div class="heading-content-column column"></div>
 
 			<div class="content-column column content">
-				<ul class="genre">
-					<li><a href="alternative.html">ALT</a></li>
-					<li><a href="#">BLUES</a></li>
-					<li><a href="#">ROCK</a></li>
-					<li><a href="#">ELECTRONIC</a></li>
-					<li><a href="#">JAZZ</a></li>
-					<li><a href="#">POP</a></li>
-					<li><a href="#">R&amp;B</a></li>
-					<li><a href="#">REGGAE</a></li>
-				</ul>
+				<form class="checkout">
+					<fieldset class="checkout">
+						<ol>
+							<li>
+								<label class="creditcard" for="card"> Credit card type: </label>
+								<select id="card" name="card">
+									<option value selected="selected">VISA</option>
+									<option value="MC">Mastercard</option>
+									<option value="AMEX">American Express</option>
+								</select>
+							</li><br />
+							<li>
+								<label class="creditcard" for="card_number"> Credit card number: </label>
+								<input id="card_number" name="card_number" type="text" size="35" maxlength="16" required>
+							</li><br />
+							<li>
+								<label class="creditcard" for="card_holder"> Card holder name: </label>
+								<input id="card_holder" name="card_holder" type="text" size="35" maxlength="16" required>
+							</li><br />
+							<li>
+								<label class="creditcard" for="card_number"> Expiration date: </label>
+								<input id="card_holder" name="card_holder" placeholder="mm/yyyy" type="text" size="8" maxlength="7" required>
+							</li><br />
+							<li>
+								<label class="creditcard" for="cvv2"> CVV2: </label>
+								<input id="cvv2" name="cvv2" type="text" size="8" maxlength="3" required>
+							</li><br />
+							<li><button class="order" type="submit">Place order</button></li>
+						</ol>
+					</fieldset>
+				</form>
 			</div>
 		</div> <!-- eighth row -->
 
 		<div class="ninth row main-content">
-			<div class="heading-column column heading"></div>
-			
-			<div class="heading-content-column column"></div>
-			
-			<div class="content-column column separator"></div>
-		</div>
-
-		<div class="tenth row main-content">
-
-			<div class="heading-column column heading">
-				<h1>year</h1>
-			</div>
-
-			<div class="heading-content-column column"></div>
-
-			<div class="content-column column content">
-				<ul class="genre">
-					<li><a href="#">50's</a></li>
-					<li><a href="#">60's</a></li>
-					<li><a href="#">70's</a></li>
-					<li><a href="#">80's</a></li>
-					<li><a href="#">90's</a></li>
-					<li><a href="#">00's</a></li>
-					<li><a href="#">10's</a></li>
-				</ul>
-			</div>
-		</div> <!-- tenth row -->
-
-		<div class="eleventh row main-content">
-			<div class="heading-column column heading"></div>
-			
-			<div class="heading-content-column column"></div>
-			
-			<div class="content-column column separator"></div>
-		</div>
-
-		<div class="twelveth row main-content">
-
-			<div class="heading-column column heading">
-				<h1>artist</h1>
-			</div>
-
-			<div class="heading-content-column column"></div>
-
-			<div class="content-column column content">
-				<ul class="artist">
-					<li><a href="#">A</a></li>
-					<li><a href="#">B</a></li>
-					<li><a href="#">C</a></li>
-					<li><a href="#">D</a></li>
-					<li><a href="#">E</a></li>
-					<li><a href="#">F</a></li>
-					<li><a href="#">G</a></li>
-					<li><a href="#">H</a></li>
-					<li><a href="#">I</a></li>
-					<li><a href="#">J</a></li>
-					<li><a href="#">K</a></li>
-					<li><a href="#">L</a></li>
-					<li><a href="#">M</a></li>
-					<li><a href="#">N</a></li>
-					<li><a href="#">O</a></li>
-					<li><a href="#">P</a></li>
-					<li><a href="#">Q</a></li>
-					<li><a href="#">R</a></li>
-					<li><a href="#">S</a></li>
-					<li><a href="#">T</a></li>
-					<li><a href="#">U</a></li>
-					<li><a href="#">V</a></li>
-					<li><a href="#">W</a></li>
-					<li><a href="#">X</a></li>
-					<li><a href="#">Y</a></li>
-					<li><a href="#">Z</a></li>
-				</ul>
-			</div>
-		</div> <!-- twelveth row -->
-
-		<div class="thirteenth row main-content">
 			<div class="heading-column column heading"></div>
 			
 			<div class="heading-content-column column"></div>

@@ -56,12 +56,6 @@ p.more {
 	margin-left: -5em;
 }
 
-.menubutton {
-	margin-left: -1.5em;
-	width: 50px;
-	height: 59px;
-}
-
 .searchbox {
 	margin-left: 1em;
 	width: 63%;
@@ -73,9 +67,13 @@ ul.genre, .artist {
 }
 
 .albumcover_large {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 	width: 93%;
+}
+
+.merchandise_image{
+	margin: 0 0 0 2.5%;
 }
 
 h3 {

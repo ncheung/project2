@@ -23,6 +23,15 @@
 	<!-- javascript -->
 	<!-- HTML5shiv.js for compatibility on older IE browsers from http://code.google.com/p/html5shiv/ -->
 	<script type="text/javascript" src="scripts/html5shiv.js"></script>
+	<!-- javascript for tablet and mobile menu -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".menubutton").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+	</script>
 </head>
 <body>
 
@@ -42,12 +51,11 @@
 				<li><a href="merchandise.html">merchandise</a></li>
 				<li><a href="community.html">community</a></li>
 				<li><a href="about.html">about</a></li>
-				<li><a href="cart.html"><img class="shoppingcart-logo" src="../images/shoppingcart.png" alt="Shopping Cart"></a></li>
-				<li><a href="#"><img class="twitter-logo" src="../images/twitter.png" alt="Twitter"></a></li>
-				<li><a href="#"><img class="facebook-logo" src="../images/facebook.png" alt="Facebook"></a></li>
+				<li><a class="nav_icon" href="cart.html"><img class="shoppingcart-logo" src="../images/shoppingcart.png" alt="Shopping Cart"></a></li>
+				<li><a class="nav_icon" href="#"><img class="twitter-logo" src="../images/twitter.png" alt="Twitter"></a></li>
+				<li><a class="nav_icon" href="#"><img class="facebook-logo" src="../images/facebook.png" alt="Facebook"></a></li>
 			</ul>
 		</nav>
-		<img class="menubutton" src="../images/menubutton.png" alt="Menu Button">
 	</div> <!-- end of second row -->
 	<!-- end of navigation -->
 
@@ -241,5 +249,17 @@
 		</div>
 
 	</div> <!-- .container -->
+	
+	<!-- tablet and mobile menu -->
+	<button class="menubutton">Toggle Navigation</button>
+	<ul class="primary-nav">
+		<li><a href="music.html">music</a></li>
+		<li><a href="merchandise.html">merchandise</a></li>
+		<li><a href="community.html">community</a></li>
+		<li><a href="about.html">about</a></li>
+		<li><a href="cart.html"><img class="shoppingcart-logo" src="../images/shoppingcart.png" alt="Shopping Cart"></a></li>
+		<li><a href="#"><img class="twitter-logo" src="../images/twitter.png" alt="Twitter"></a></li>
+		<li><a href="#"><img class="facebook-logo" src="../images/facebook.png" alt="Facebook"></a></li>
+	</ul>
 </body>
 </html>
