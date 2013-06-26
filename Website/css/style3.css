@@ -88,3 +88,13 @@ h3 {
 form.review ol li {
 	padding-left: 1em;
 }
+
+/* Checkout form labels */
+
+label.personal{
+	margin-left:0;
+}
+
+label.creditcard{
+	margin-left:0;
+}

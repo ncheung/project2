@@ -119,10 +119,28 @@ nav ul li {
 	display: block; 
 }
 
+/* Search bar */
+
 .search {
 	padding-top: .4em;
 }
 
 .searchbox {
 	width: 62%;
+}
+
+/* Checkout form labels */
+
+label.personal{
+	text-align:left;
+	margin-left:-4%;
+}
+
+label.creditcard{
+	text-align:left;
+	margin-left:-4%;
+}
+
+input {
+	size: 20;
 }
