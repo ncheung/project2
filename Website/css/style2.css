@@ -3,28 +3,33 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.7em;
 	line-height: 1.5em;
 	margin: 0 0 0.2em 0;
 }
 
 h3 {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	line-height: 1em;
 	margin: 0.4em auto;
 }
 
 .content_image {
+	border: 0.4em solid #FFFFFF;
 	max-width: 120px;
 	max-height: 120px;
 	height: auto;
 	width: 50%;
-	margin: 0 1em 0.2em 0;
+	/* margin: 0 1em 0.2em 0; */
 }
 
 p.content_text {
-	font-size: 90%;
-	line-height: 1.5em;
+	font-size: 110%;
+	line-height: 1.7em;
+}
+
+p.more{
+	font-size:110%;
 }
 
 .albumcover {
@@ -42,8 +47,8 @@ p.content_text {
 
 p.sidebartext {
 	margin-top: 0.4em;
-	font-size: 85%;
-	line-height: 1.5em
+	font-size: 95%;
+	line-height: 1.6em
 }
 
 nav ul li {
@@ -141,6 +146,10 @@ label.creditcard{
 	margin-left:-4%;
 }
 
-input {
-	size: 20;
+.merchandise_info {
+	font-size:110%;
+}
+
+.price {
+	margin: 0 2% 15% 80%;
 }

@@ -92,15 +92,9 @@ p.checkout {
 }
 
 /*----- link styles -----*/
-a:link { color: #EC3F51; text-decoration: none; }
-a:visited { color: #EC3F51 }
-a:hover { color: #000000 }
-a:active { color: #EC3F51 }
-
-nav ul li a {
+nav a:link {
 	color: #FFFFFF;
 	text-decoration: none;
-/*	border: 1px solid black;*/
 }
 
 nav a:visited {
@@ -119,8 +113,17 @@ nav a.nav_icon:hover{
 	background-color: #EC3F51;
 }
 
+a:link { color: #EC3F51; text-decoration: none; }
+a:visited { color: #EC3F51 }
+a:hover { color: #000000 }
+a:active { color: #EC3F51 }
+
 .content_image:hover {
 	border: 0.4em solid #E9E9E9;
+}
+
+.content_image:visited {
+	border: 0.4em solid #FFFFFF;
 }
 
 .albumcover:hover {
@@ -159,6 +162,11 @@ img.merchandise_image:hover {
 
 .logo {
 	background-color: #E9E8E3;
+	width: 300px;
+	height: 59px;
+}
+
+.logo_image {
 	width: 300px;
 	height: 59px;
 }
@@ -389,6 +397,11 @@ img.merchandise_image {
 	line-height: 1.3em;
 }
 
+.price {
+	font-weight: bold;
+	margin: 0 2% 15% 45%;
+}
+
 .merchandise_summary {
 	font-size: 90%;
 	line-height: 1.6em;
@@ -442,9 +455,13 @@ label.creditcard{
 	text-align:right;
 }
 
-button.order{
+.order{
 	float:right;
 	width:150px;
+}
+
+a.order_link{
+	color: #000000;
 }
 
 .primary-nav{
@@ -473,4 +490,8 @@ button.order{
 
 .total{
 	font-weight:bold;
+}
+
+.form_spacing{
+	margin: 0 0 3.5% 0;
 }

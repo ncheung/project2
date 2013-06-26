@@ -16,8 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<!-- tablet and mobile stylesheets -->
-	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/grid2.css" />
-	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/style2.css" />
+	<link rel="stylesheet" media="(max-width:1200px)" type="text/css" href="../css/grid2.css" />
+	<link rel="stylesheet" media="(max-width:1200px)" type="text/css" href="../css/style2.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/grid3.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/style3.css" />
 	<!-- javascript -->
@@ -42,7 +42,7 @@
 		<div class="one column"></div>
 
 		<div class="two column logo">
-			<a href="../index.html"><img src="../images/logo.png" alt="Vinyl Bros. logo"></a>
+			<a href="../index.html"><img class="logo_image" src="../images/logo.png" alt="Vinyl Bros. logo"></a>
 		</div>
 		
 		<nav>
@@ -68,7 +68,7 @@
 		<!-- start of sidebar content -->
 		<div class="sidebar-column sidebar">
 			<p class="sidebartitle">similar products</p>
-			<a href="#"><img class="albumcover_small" src="../images/merchandise/magazine_iCrates.jpg" alt="iCrates"></a>	
+			<a href="#"><img class="albumcover_small" src="../images/merchandise/magazine_icrates.jpg" alt="iCrates"></a>	
 			<div class="clearer"></div>
 		</div> <!-- end of sidebar -->
 		<!-- end of sidebar content-->
@@ -160,10 +160,10 @@
 				<form class="review">
 					<fieldset class="review">
 						<ol>
-							<li><input id="name" name="name" type="text" placeholder="First and last name" required></li><br />
-							<li><input id="email" name="email" type="email" placeholder="example@domain.com" required /></li><br />
-							<li><input id="website" name="website" type="text" placeholder="Website URL" required /></li><br />
-							<li><textarea id="message" name="message" placeholder="Enter your review ..." rows="10" cols="50"></textarea></li><br />
+							<li><input class="form_spacing" id="name" name="name" type="text" placeholder="First and last name" required></li>
+							<li><input class="form_spacing" id="email" name="email" type="email" placeholder="example@domain.com" required /></li>
+							<li><input class="form_spacing" id="website" name="website" type="text" placeholder="Website URL" required /></li>
+							<li><textarea class="form_spacing" id="message" name="message" placeholder="Enter your review ..." rows="10" cols="50"></textarea></li>
 							<li><button type="submit">Post</button></li>
 						</ol>
 					</fieldset>

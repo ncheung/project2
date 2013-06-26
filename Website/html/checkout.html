@@ -16,8 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<!-- tablet and mobile stylesheets -->
-	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/grid2.css" />
-	<link rel="stylesheet" media="(max-width:768px)" type="text/css" href="../css/style2.css" />
+	<link rel="stylesheet" media="(max-width:1200px)" type="text/css" href="../css/grid2.css" />
+	<link rel="stylesheet" media="(max-width:1200px)" type="text/css" href="../css/style2.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/grid3.css" />
 	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="../css/style3.css" />
 	<!-- javascript -->
@@ -42,7 +42,7 @@
 		<div class="one column"></div>
 
 		<div class="two column logo">
-			<a href="../index.html"><img src="../images/logo.png" alt="Vinyl Bros. logo"></a>
+			<a href="../index.html"><img class="logo_image" src="../images/logo.png" alt="Vinyl Bros. logo"></a>
 		</div>
 		
 		<nav>
@@ -107,27 +107,27 @@
 						<ol>
 							<li>
 								<label class="personal" for="first_name"> First name: </label>
-								<input id="first_name" name="first_name" type="text" size="35" required>
-							</li><br />
+								<input class="form_spacing" id="first_name" name="first_name" type="text" size="35" required>
+							</li>
 							<li>
-								<label class="personal"for="last_name"> Last name: </label>
-								<input id="last_name" name="last_name" type="text" size="35" required>
-							</li><br />
+								<label class="personal" for="last_name"> Last name: </label>
+								<input class="form_spacing" id="last_name" name="last_name" type="text" size="35" required>
+							</li>
 							<li>
-								<label class="personal"for="address1"> Address 1: </label>
-								<input id="address1" name="address1" type="text" placeholder="(Street address, Company name, or c/o)" size="35" required>
-							</li><br />
+								<label class="personal" for="address1"> Address 1: </label>
+								<input class="form_spacing" id="address1" name="address1" type="text" placeholder="(Street address, Company name, or c/o)" size="35" required>
+							</li>
 							<li>
-								<label class="personal"for="address2"> Address 2: </label>
-								<input id="address2" name="address2" type="text" placeholder="(Apartment, Building, Floor, etc.)" size="35" required>
-							</li><br />
+								<label class="personal" for="address2"> Address 2: </label>
+								<input class="form_spacing" id="address2" name="address2" type="text" placeholder="(Apartment, Building, Floor, etc.)" size="35" required>
+							</li>
 							<li>
-								<label class="personal"for="city"> City: </label>
-								<input id="city" name="city" type="text"  size="35" required>
-							</li><br />
+								<label class="personal" for="city"> City: </label>
+								<input class="form_spacing" id="city" name="city" type="text"  size="35" required>
+							</li>
 							<li>
-								<label class="personal"for="province"> Province: </label>
-								<select id="province" name="province">
+								<label class="personal" for="province"> Province: </label>
+								<select class="form_spacing" id="province" name="province">
 									<option value selected="selected">Select a province</option>
 									<option value="AB">Alberta</option>
 									<option value="BC">British Columbia</option>
@@ -143,7 +143,7 @@
 									<option value="SK">Saskatchewan</option>
 									<option value="YT">Yukon Territories</option>
 								</select>
-							</li><br />
+							</li>
 							<li>
 								<label class="personal" for="postal"> Postal Code: </label>
 								<input id="postal" name="postal" type="text" size="35" required>
@@ -176,33 +176,33 @@
 						<ol>
 							<li>
 								<label class="creditcard" for="card"> Credit card type: </label>
-								<select id="card" name="card">
+								<select class="form_spacing" id="card" name="card">
 									<option value selected="selected">VISA</option>
 									<option value="MC">Mastercard</option>
 									<option value="AMEX">American Express</option>
 								</select>
-							</li><br />
+							</li>
 							<li>
 								<label class="creditcard" for="card_number"> Credit card number: </label>
-								<input id="card_number" name="card_number" type="text" size="35" maxlength="16" required>
-							</li><br />
+								<input class="form_spacing" id="card_number" name="card_number" type="text" size="35" maxlength="16" required>
+							</li>
 							<li>
 								<label class="creditcard" for="card_holder"> Card holder name: </label>
-								<input id="card_holder" name="card_holder" type="text" size="35" maxlength="16" required>
-							</li><br />
+								<input class="form_spacing" id="card_holder" name="card_holder" type="text" size="35" maxlength="16" required>
+							</li>
 							<li>
 								<label class="creditcard" for="card_number"> Expiration date: </label>
-								<input id="card_holder" name="card_holder" placeholder="mm/yyyy" type="text" size="8" maxlength="7" required>
-							</li><br />
+								<input class="form_spacing" id="expiration" name="card_holder" placeholder="mm/yyyy" type="text" size="8" maxlength="7" required>
+							</li>
 							<li>
 								<label class="creditcard" for="cvv2"> CVV2: </label>
-								<input id="cvv2" name="cvv2" type="text" size="8" maxlength="3" required>
-							</li><br />
+								<input class="form_spacing" id="cvv2" name="cvv2" type="text" size="8" maxlength="3" required>
+							</li>
 							
 						</ol>
 					</fieldset>
 				</form>
-				<button class="order" type="submit">Place order</button>
+				<button class="order"><a class="order_link" href="complete.html">Place order</a></button>
 			</div>
 		</div> <!-- eighth row -->
 
